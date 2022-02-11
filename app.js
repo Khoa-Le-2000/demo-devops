@@ -14,6 +14,7 @@ app.listen(PORT, () => {
 
 router.route(app);
 app.get('/', (req, res) => {
+    console.log("Hello World");
     res.sendFile(__dirname + '/captchaTest.html', (err) => {
         if (err) {
             console.log(err);
